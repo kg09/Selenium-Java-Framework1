@@ -47,3 +47,5 @@ public class LoginPage {
 	
 	
 }
+
+//a[normalize-space()='Amazon Launchpad']
