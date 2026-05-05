@@ -8,7 +8,6 @@
           <include name="setup"/>
           <include name="testlogin"/>
           <include name="quitbrowser"/>
-          <include name="invalidtestlogin"/>
         </methods>
       </class> <!-- test.LoginTest -->
     </classes>

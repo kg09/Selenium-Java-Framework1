@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="test.LoginTest" class="method navigator-link" hash-for-method="invalidtestlogin">invalidtestlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.LoginTest" class="method navigator-link" hash-for-method="login_with_empty_password">login_with_empty_password</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +143,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="login_with_empty_password">
+                  </a> <!-- login_with_empty_password -->
+                  <span class="method-name">login_with_empty_password</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testlogin">
                   </a> <!-- testlogin -->
                   <span class="method-name">testlogin</span>
@@ -148,7 +160,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/l9/chh4w7nd4s7cch98m873dxn00000gp/T/testng-eclipse--428408485/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/l9/chh4w7nd4s7cch98m873dxn00000gp/T/testng-eclipse--1664584481/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,15 +209,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testlogin')
 data.setCell(0, 2, 'test.LoginTest')
-data.setCell(0, 3, 1380);
+data.setCell(0, 3, 1197);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'invalidtestlogin')
+data.setCell(1, 1, 'login_with_empty_password')
 data.setCell(1, 2, 'test.LoginTest')
-data.setCell(1, 3, 860);
+data.setCell(1, 3, 865);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'invalidtestlogin')
+data.setCell(2, 2, 'test.LoginTest')
+data.setCell(2, 3, 811);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -242,24 +258,36 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">invalidtestlogin</span>
-                <span class="method-start">1505 ms</span>
+                <span class="method-name">login_with_empty_password</span>
+                <span class="method-start">1256 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">2123 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">2366 ms</span>
+                <span class="method-start">2123 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">quitbrowser</span>
-                <span class="method-start">2366 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">testlogin</span>
-                <span class="method-start">3470 ms</span>
+                <span class="method-name">invalidtestlogin</span>
+                <span class="method-start">3945 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitbrowser</span>
-                <span class="method-start">4851 ms</span>
+                <span class="method-start">4757 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4757 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testlogin</span>
+                <span class="method-start">7535 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">8733 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
