@@ -10,7 +10,7 @@ public class LoginTest extends BaseTest {
 
 	
 	//TestNG Annotation
-	@Test(priority = 2) //test annotation is to make the method as test method
+	@Test(priority = 3) //test annotation is to make the method as test method
 	public void testlogin()
 	{
 	
@@ -28,7 +28,7 @@ public class LoginTest extends BaseTest {
 	    
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 2)
 	public void invalidtestlogin()
 	{
 		LoginPage loginpage = new LoginPage (driver);
@@ -39,5 +39,17 @@ public class LoginTest extends BaseTest {
 	    
 	    System.out.println("invalid login : Title of the page is:" + driver.getTitle());
 		
+	}
+	
+	@Test(priority = 1)
+	public void login_with_empty_password()
+	{
+		LoginPage loginpage = new LoginPage (driver);
+		
+		loginpage.username("");
+		loginpage.password("");
+		loginpage.loginbutton();
+		System.out.println("invalid login : Title of the page is:" + driver.getTitle());
+			
 	}
 }
